@@ -1,0 +1,64 @@
+.characters {
+  position: relative;
+  top: 225px;
+}
+.characters .nakama-title {
+  font-size: 2em;
+  text-align: center;
+}
+.characters .nakama-containers {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(3, 185px);
+  grid-gap: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .characters .nakama-containers {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+.characters .nakama-containers .nakama-container {
+  width: 185px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+}
+.characters .nakama-containers .nakama-container:hover {
+  transition: ease-in-out, 0.5s;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 900px) {
+  .characters .nakama-containers .nakama-container {
+    width: 335px;
+    height: 280px;
+  }
+}
+.characters .nakama-containers .nakama-container .nakama-photo {
+  object-fit: cover;
+  height: 140px;
+  width: 185px;
+  border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 900px) {
+  .characters .nakama-containers .nakama-container .nakama-photo {
+    height: 220px;
+    width: 335px;
+  }
+}
+.characters .nakama-containers .nakama-container .nakama-name {
+  text-align: center;
+  padding-top: 5px;
+}
+.characters .nakama-containers .nakama-container .nakama-bounty {
+  text-align: center;
+  padding-top: 5px;
+}
+.characters .ennemy .ennemy-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=characters.css.map */

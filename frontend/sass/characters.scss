@@ -1,0 +1,60 @@
+.characters {
+    position: relative;
+    top: 225px;
+    .nakama {
+        &-title {
+            font-size: 2em;
+            text-align: center;
+        }
+        &-containers {
+            display: grid;
+            margin: 20px;
+            grid-template-columns: repeat(3, 185px);
+            grid-gap: 20px;
+            justify-content: center;
+            cursor: pointer;
+            @media screen and (max-width: 900px) {
+                grid-template-columns: auto;
+                justify-content: center;
+            }
+            .nakama-container {
+                width: 185px;
+                height: 200px;
+                background-color: white;
+                border-radius: 20px;
+                &:hover {
+                    transition: ease-in-out, 0.5s;
+                    transform: scale(1.1);
+                }
+                @media screen and (max-width: 900px) {
+                    width: 335px;
+                    height: 280px;
+                }
+                .nakama-photo {
+                    object-fit: cover;
+                    height: 140px;
+                    width: 185px;
+                    border-radius: 20px 20px 0px 0px;
+                    @media screen and (max-width: 900px) {
+                        height: 220px;
+                        width: 335px;
+                    }
+                }
+                .nakama-name {
+                    text-align: center;
+                    padding-top: 5px;
+                }
+                .nakama-bounty {
+                    text-align: center;
+                    padding-top: 5px;
+                }
+            }
+       } 
+    }
+    .ennemy {
+        .ennemy-title {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+}

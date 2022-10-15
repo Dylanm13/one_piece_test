@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
+  background-image: url(/frontend/images/vogue_merry.png);
+  background-size: cover;
+}
+
+header .navbar {
+  padding: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+header .navbar a {
+  color: black;
+}
+header .navbar .logo {
+  object-fit: cover;
+  width: 10em;
+}
+header .navbar .nav-links ul {
+  display: flex;
+  font-size: 1.5em;
+}
+header .navbar .nav-links ul li {
+  margin: 0 25px;
+}
+header .navbar .menu-hamburger {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 35px;
+}
+@media screen and (max-width: 900px) {
+  header .navbar {
+    padding: 0;
+  }
+  header .navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+  }
+  header .navbar .menu-hamburger {
+    display: block;
+  }
+  header .navbar .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  header .navbar .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  header .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+}
+
+.characters {
+  position: relative;
+  top: 225px;
+}
+.characters .nakama-title {
+  font-size: 2em;
+  text-align: center;
+}
+.characters .nakama-containers {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(3, 185px);
+  grid-gap: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .characters .nakama-containers {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+.characters .nakama-containers .nakama-container {
+  width: 185px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+}
+.characters .nakama-containers .nakama-container:hover {
+  transition: ease-in-out, 0.5s;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 900px) {
+  .characters .nakama-containers .nakama-container {
+    width: 335px;
+    height: 280px;
+  }
+}
+.characters .nakama-containers .nakama-container .nakama-photo {
+  object-fit: cover;
+  height: 140px;
+  width: 185px;
+  border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 900px) {
+  .characters .nakama-containers .nakama-container .nakama-photo {
+    height: 220px;
+    width: 335px;
+  }
+}
+.characters .nakama-containers .nakama-container .nakama-name {
+  text-align: center;
+  padding-top: 5px;
+}
+.characters .nakama-containers .nakama-container .nakama-bounty {
+  text-align: center;
+  padding-top: 5px;
+}
+.characters .ennemy .ennemy-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
