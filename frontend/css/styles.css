@@ -7,9 +7,7 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  height: 100vh;
   background-image: url(/frontend/images/vogue_merry.png);
-  background-size: cover;
 }
 
 header .navbar {
@@ -34,6 +32,11 @@ header .navbar .nav-links ul {
 }
 header .navbar .nav-links ul li {
   margin: 0 25px;
+  transition: ease-in-out, 0.5s;
+}
+header .navbar .nav-links ul li:hover {
+  transition: ease-in-out, 0.5s;
+  transform: scale(1.07);
 }
 header .navbar .menu-hamburger {
   display: none;
@@ -87,12 +90,12 @@ header .navbar .menu-hamburger {
   top: 225px;
 }
 .characters .nakama-title {
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
 }
 .characters .nakama-containers {
   display: grid;
-  margin: 20px;
+  margin: 60px 0px;
   grid-template-columns: repeat(3, 185px);
   grid-gap: 20px;
   justify-content: center;
@@ -109,6 +112,7 @@ header .navbar .menu-hamburger {
   height: 200px;
   background-color: white;
   border-radius: 20px;
+  transition: ease-in-out, 0.5s;
 }
 .characters .nakama-containers .nakama-container:hover {
   transition: ease-in-out, 0.5s;
@@ -141,7 +145,7 @@ header .navbar .menu-hamburger {
   padding-top: 5px;
 }
 .characters .ennemy .ennemy-title {
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
 }
 
