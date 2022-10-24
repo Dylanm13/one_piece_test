@@ -7,7 +7,7 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-image: url(/frontend/images/vogue_merry.png);
+  background-image: url(../images/vogue_merry.png);
 }
 
 header .navbar {
